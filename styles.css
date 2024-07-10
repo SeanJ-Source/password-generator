@@ -1,0 +1,101 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color:honeydew;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  margin:0;
+  min-height:100vh;
+}
+
+.pw-container {
+  background-color: rgba(22, 92, 2, 0.993);
+  width:800px;
+  box-shadow:0 5px 10px rgb(20, 148, 6);
+}
+
+.pw-header {
+  padding:1rem;
+}
+
+.pw {
+  background-color:rgb(6, 18, 1);
+  height:55px;
+  width:100%;
+  text-align: center;
+  color:rgb(117, 220, 38);
+  text-shadow: 0 1px 2px white;
+  font-size: 2rem;
+}
+
+.pw-body {
+  padding: 0 0.5rem 0.5rem;
+  font-size:18px;
+  color:rgb(135, 244, 51);
+  text-shadow: 0 0 1px white;
+}
+
+.pw button {
+  display:flex;
+  background-color: white;
+  border: none;
+  font-family: inherit;
+  padding:.20rem;
+  opacity:0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  cursor:none;
+  transform:translate(0, 20%);
+  margin-left:45%;
+}
+
+.pw button:hover {
+  opacity:1;
+}
+
+.form-control {
+  display:flex;
+  justify-content: space-between;
+  margin:1rem 0;
+  font-size: 2rem;
+}
+
+.generate {
+  display:block;
+  cursor:grab;
+  background-color: rgb(6, 18, 1);
+  color: rgb(130, 240, 45);
+  font-size:2rem;
+  padding:0.5rem;
+  border:none;
+  width:100%;
+  margin-top:1rem;
+  display:block;
+  font-family:inherit;
+  text-shadow: 0 1px 2px white;
+}
+
+span {
+  font-size:x-large;
+}
+
+#upper, #lower, #number, #symbol {
+  width: 4rem;
+}
+
+#len {
+  font-size: 1.5rem;
+}
+
+#generate {
+  height:auto;
+}
+
+#pw {
+  font-size: 3rem;
+}
+
+#copy {
+  font-size: 2rem;
+}
