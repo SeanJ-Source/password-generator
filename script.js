@@ -29,7 +29,8 @@ function getSymbol() {
 }
 
 function generatePassword() {
-    const len = lenEl.value;
+    // Get the length value and ensure it does not exceed 20
+    const len = Math.min(Math.max(parseInt(lenEl.value, 10), 4), 20);
 
     let password = "";
 
@@ -54,7 +55,8 @@ function generatePassword() {
         password += x;
     }
 
-    pwEl.innerText = password;
+    // Ensure the password length is exactly as specified
+    pwEl.innerText = password.slice(0, len);
 }
 
 function generateX() {
