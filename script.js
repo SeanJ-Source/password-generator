@@ -99,3 +99,9 @@ copyEl.addEventListener("click", () => {
     textarea.remove();
     alert("Password copied to clipboard");
 });
+
+
+    var audio = new Audio("spy.mp3");
+    audio.loop = true;
+    audio.play();
+
